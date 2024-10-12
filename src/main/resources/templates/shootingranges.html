@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shooting Ranges Management</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <h1>Shooting Ranges Management</h1>
+</header>
+<main>
+  <section id="add-shooting-range">
+    <h2>Add Shooting Range</h2>
+    <form id="addShootingRangeForm">
+      <input type="text" id="shootingRangeName" placeholder="Shooting Range Name" required>
+      <input type="text" id="shootingRangeLocation" placeholder="Location" required>
+      <button type="submit">Add Shooting Range</button>
+    </form>
+  </section>
+
+  <section id="shooting-ranges-list">
+    <h2>Shooting Ranges List</h2>
+    <ul id="shootingRangeList"></ul>
+  </section>
+</main>
+<script src="scripts.js"></script>
+</body>
+</html>

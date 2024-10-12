@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equipment Management</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <h1>Equipment Management</h1>
+</header>
+<main>
+  <section id="add-equipment">
+    <h2>Add Equipment</h2>
+    <form id="addEquipmentForm">
+      <input type="text" id="equipmentName" placeholder="Equipment Name" required>
+      <input type="text" id="equipmentType" placeholder="Equipment Type" required>
+      <button type="submit">Add Equipment</button>
+    </form>
+  </section>
+
+  <section id="equipment-list">
+    <h2>Equipment List</h2>
+    <ul id="equipmentList"></ul>
+  </section>
+</main>
+<script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservations Management</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <h1>Reservations Management</h1>
+</header>
+<main>
+  <section id="add-reservation">
+    <h2>Add Reservation</h2>
+    <form id="addReservationForm">
+      <input type="text" id="reservationEquipmentName" placeholder="Equipment Name" required>
+      <input type="text" id="reservationMemberName" placeholder="Member Name" required>
+      <input type="date" id="reservationDate" required>
+      <button type="submit">Add Reservation</button>
+    </form>
+  </section>
+
+  <section id="reservations-list">
+    <h2>Reservations List</h2>
+    <ul id="reservationList"></ul>
+  </section>
+</main>
+<script src="scripts.js"></script>
+</body>
+</html>

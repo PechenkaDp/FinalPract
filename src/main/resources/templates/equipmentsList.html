@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="">
+<head>
+  <meta charset="UTF-8">
+  <title>Снаряжение</title>
+</head>
+<body>
+<h1>Equipment List</h1>
+<a href="/equipments/new">Создание нового снаряжения</a>
+<table>
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Actions</th>
+  </tr>
+  </thead>
+  <tbody>
+  <th:block th:each="equipment : ${equipments}">
+    <tr>
+      <td th:text="${equipment.id}"></td>
+      <td th:text="${equipment.name}"></td>
+      <td>
+        <a th:href="@{/equipments/{id}/edit(id=${equipment.id})}">Изменить</a>
+        <a th:href="@{/equipments/{id}/delete(id=${equipment.id})}">Удалить</a>
+      </td>
+    </tr>
+  </th:block>
+  </tbody>
+</table>
+</body>
+</html>
